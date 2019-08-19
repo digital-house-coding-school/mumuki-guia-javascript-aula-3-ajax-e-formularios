@@ -37,7 +37,7 @@ describe("Exercício 1", function() {
   });
 
   it("Test 2", function() {
-    var input = "Juan    ,    Sol  ,  Pepe, Marta,    Dan,    Iñaki  ";
+    var input = "Juan    ,    Sol  ,  Pepe, Marta,    Dan,    Inaki  ";
 
     var output = bombaDeStrings(input);
 
