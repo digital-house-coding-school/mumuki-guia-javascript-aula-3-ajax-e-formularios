@@ -67,7 +67,7 @@ describe("Exercício 1", function() {
 
     assert(
       output === "Juan,Marta,Inaki",
-      "A quantidade de nomes é correta mas a string retornada não. Era esperado 'Juan,Marta' e era recebido '" +
+      "A quantidade de nomes é correta mas a string retornada não. Era esperado 'Juan,Marta,Inaki' e foi recebido '" +
         output +
         "'"
     );
