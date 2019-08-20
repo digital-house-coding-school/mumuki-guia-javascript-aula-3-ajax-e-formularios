@@ -41,10 +41,7 @@ describe("Exercício 2", function() {
       "O modelo do carro não é o mesmo que foi recebido"
     );
 
-    assert(
-      "color" in meuCarro,
-      "O objeto retornado não possui o atributo cor."
-    );
+    assert("cor" in meuCarro, "O objeto retornado não possui o atributo cor.");
 
     assert(
       meuCarro.color === "Vermelho",
