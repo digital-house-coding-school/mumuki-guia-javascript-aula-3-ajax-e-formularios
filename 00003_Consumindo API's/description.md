@@ -6,9 +6,9 @@ Para este exercício, vamos finalmente implementar o AJAX usando uma API externa
 
 ```javascript
 {
-  "resultados": [
+  "results": [
     {
-      "nome": "fogo",
+      "name": "fogo",
       "url": "https://pokeapi.co/api/v2/type/10/",
     }
   ]
