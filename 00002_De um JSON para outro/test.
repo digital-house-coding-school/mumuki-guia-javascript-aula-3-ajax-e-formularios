@@ -45,7 +45,7 @@ describe("Exercício 2", function() {
 
     assert(
       meuCarro.color === "Vermelho",
-      "A cor do carro não é o mesmo que foi recebido"
+      "A cor do carro não é a mesma que foi recebida"
     );
   });
 });
