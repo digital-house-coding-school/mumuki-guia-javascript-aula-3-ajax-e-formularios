@@ -44,7 +44,7 @@ describe("Exercício 2", function() {
     assert("cor" in meuCarro, "O objeto retornado não possui o atributo cor.");
 
     assert(
-      meuCarro.color === "Vermelho",
+      meuCarro.cor === "Vermelho",
       "A cor do carro não é a mesma que foi recebida"
     );
   });
