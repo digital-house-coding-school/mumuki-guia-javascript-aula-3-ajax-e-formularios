@@ -20,4 +20,4 @@ Seu desafio então é adicionar a seguinte lógica ao evento do `<li>`:
 
 Infelizmente, dada a complexidade do exercício, a plataforma é curta para avaliarmos se a solução está correta, de modo que este exercício funcionará como um experimento.
 
-Caso você goste, na faixa abaixo você encontrará a solução: wink:
+Caso você goste, na faixa abaixo você encontrará a solução :wink:
