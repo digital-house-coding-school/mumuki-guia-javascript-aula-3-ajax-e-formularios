@@ -1,6 +1,6 @@
 **Esclarecimento: Os erros neste exercício não são exibidos tão bonitos quanto gostaríamos. Preste atenção ao texto em negrito e sublinhado para encontrar uma boa pista**
 
-Vamos caminhar mais um passo!
+Vamos caminhar mais um passo! 
 
 Se você olhar para o HTML, agora temos uma tag `<p>`
 
