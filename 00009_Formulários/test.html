@@ -1,0 +1,15 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Formularios", function() {
+	_dispatch_('load', document);
+	
+	_dispatch_("submit", document.querySelector("form"))
+	
+	var hayUltimaAlerta = _last_alert_message_ !== null
+	
+	true.should.eql(hayUltimaAlerta, "<b><u>Você chamou a função alert ao enviar o formuário?</u></b>")
+	
+	_last_alert_message_.should.eql("Obrigado!", "<b><u>O alerta deveria dizer 'Obrigado!' ao enviar o formulário</u></b>")
+   
+  });/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
