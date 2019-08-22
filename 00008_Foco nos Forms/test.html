@@ -1,0 +1,19 @@
+/*<output#*//*#output>*/
+/*<tests#*/it("Formularios", function() {
+  _dispatch_('load', document);
+  
+  _dispatch_("change", document.querySelectorAll("input")[0])
+  
+  var hayUltimaAlerta = _last_alert_message_ !== null
+  
+  true.should.eql(hayUltimaAlerta, "<b><u>Você chamou a função alert ao fazer mudanças no primeiro input?</u></b>")
+  
+  _last_alert_message_.should.eql("Obrigado por deixar seu nome", "<b><u>O alerta deveria dizer 'Obrigado por deixar seu nome!' ao fazer mudanças no primeiro nome</u></b>")
+  
+  _dispatch_("change", document.querySelectorAll("input")[1])
+  
+  _last_alert_message_.should.eql("Obrigado por deixar seu e-mail!", "<b><u>O alerta deveria dizer 'Obrigado por deixar seu e-mail!' ao fazer mudanças no segundo campo</u></b>")
+ 
+});/*#tests>*/
+/*<options#*/output_ignore_scripts: true
+output_ignore_styles: true/*#options>*/
