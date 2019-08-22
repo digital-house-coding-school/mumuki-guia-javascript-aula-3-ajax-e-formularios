@@ -1,4 +1,48 @@
 /*<output#*//*#output>*/
-/*<tests#*//*#tests>*/
+/*<tests#*/it("Formulários", function() {
+  _dispatch_("load", document);
+
+  var inputs = document.querySelectorAll("input");
+
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].value = "sarasa";
+  }
+
+  _dispatch_("submit", document.querySelector("form"));
+
+  let teveAlert = _last_alert_message_ !== null;
+
+  true.should.eql(
+    !teveAlert,
+    "Se o formulário está preenchido não deveria aparecer nenhum alert..."
+  );
+
+  inputs[0].value = "";
+
+  _dispatch_("submit", document.querySelector("form"));
+
+  teveAlert = _last_alert_message_ !== null;
+
+  true.should.eql(
+    teveAlert,
+    "Se o formulário está vazio deveria aparecer um alert"
+  );
+
+  _last_alert_message_.should.eql(
+    "Você deixou o campo nome vazio",
+    "A mensagem de que está no alert não está correta, a mensagem deveria ser 'Você deixou o campo nome vazio'"
+  );
+
+  inputs[0].value = "sarasa";
+  inputs[1].value = "";
+
+  _dispatch_("submit", document.querySelector("form"));
+
+  _last_alert_message_.should.eql(
+    "Você deixou o campo email vazio",
+    "A mensagem de que está no alert não está correta, a mensagem deveria ser 'Você deixou o campo email vazio'"
+  );
+});
+/*#tests>*/
 /*<options#*/output_ignore_scripts: true
 output_ignore_styles: true/*#options>*/
