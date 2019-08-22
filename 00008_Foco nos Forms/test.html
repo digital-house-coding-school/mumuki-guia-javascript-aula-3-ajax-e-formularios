@@ -8,7 +8,7 @@
   
   true.should.eql(hayUltimaAlerta, "<b><u>Você chamou a função alert ao fazer mudanças no primeiro input?</u></b>")
   
-  _last_alert_message_.should.eql("Obrigado por deixar seu nome", "<b><u>O alerta deveria dizer 'Obrigado por deixar seu nome!' ao fazer mudanças no primeiro nome</u></b>")
+  _last_alert_message_.should.eql("Obrigado por deixar seu nome!", "<b><u>O alerta deveria dizer 'Obrigado por deixar seu nome!' ao fazer mudanças no primeiro nome</u></b>")
   
   _dispatch_("change", document.querySelectorAll("input")[1])
   
